@@ -15,6 +15,8 @@ Todo list>
 
 7. Actual hand models that isnt the grip models
 
+PS. add comments to code, already forgot what some of it means
+
 Extras> Green majestic tree on top of a flat round hill. Player spawns under the tree with apples around it. A hatchet can be found lying at the base of the tree.
 Surrounded by forest and a clear path to a small nearby village. Blue sky with clouds and the occasional wind effects.
 Non player characters that are only there for show, no dismembering
