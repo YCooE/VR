@@ -24,7 +24,10 @@ public class Potatograb : MonoBehaviour {
 
     private Vector3 old_pos;
     FixedJoint fixedJoint;
-
+    void Start()
+    {
+        rb = GetComponent<RigidBody>();
+    }
     void Awake () 
     {
         trackedObj = GetComponent<SteamVR_TrackedObject>();
