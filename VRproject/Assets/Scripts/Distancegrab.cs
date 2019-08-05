@@ -4,6 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(SteamVR_TrackedObject))]
 public class Distancegrab : MonoBehaviour
 {
+
+    public float throwForce = 50;
     SteamVR_TrackedObject trackedObject;
     SteamVR_Controller.Device device;
 
@@ -11,10 +13,6 @@ public class Distancegrab : MonoBehaviour
     public Rigidbody hand;
 
     //This may be redundant
-    void Start()
-    {
-        rb = GetComponent<RigidBody>();
-    }
 
     // Awake is called when program is called
     void Awake()
@@ -34,11 +32,13 @@ public class Distancegrab : MonoBehaviour
         {
             Debug.Log("Touchdown the trigger");
         }
-        if (device.GetTouchDown(EVRButtonId.k_EButton_SteamVR_Touchpad))
+        /*
+        if (device.GetAxis(EVRButtonId.k_EButton_SteamVR_Touchpad))
         {
             Debug.Log("Touchdown on touch pad");
             addForce();
         }
+        */
     }
 
     void OnTriggerStay(Collider col)
