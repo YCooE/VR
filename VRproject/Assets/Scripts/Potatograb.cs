@@ -8,8 +8,8 @@ using UnityEngine;
 
 [RequireComponent(typeof(SteamVR_TrackedObject))]
 public class Potatograb : MonoBehaviour {
-
-    public Rigidbody handtosend;
+    /*
+    //public Rigidbody handtosend;
     public Transform sphere;
     public Transform target;
     public Transform curve_point;
@@ -26,7 +26,7 @@ public class Potatograb : MonoBehaviour {
     FixedJoint fixedJoint;
     void Start()
     {
-        rb = GetComponent<RigidBody>();
+        //rb = GetComponent<RigidBody>();
     }
     void Awake () 
     {
@@ -102,7 +102,7 @@ public class Potatograb : MonoBehaviour {
         }
 
     }
-
+    /*
     void Forcefire()
     {
         handtosend.transform.parent = null;
@@ -150,4 +150,5 @@ public class Potatograb : MonoBehaviour {
       Vector3 p = (uu * p0) + (2 * u * t * p1) + (tt * p2);
       return p;
     }
+    */
 }
