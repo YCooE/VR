@@ -1,6 +1,7 @@
 # VR Hands
 I make some VR hands <br />
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.38.6690&rep=rep1&type=pdf
+https://codingchronicles.com/100-days-of-unity-vr-development
 
 Todo list>
 
@@ -21,6 +22,14 @@ Extras> Green majestic tree on top of a flat round hill. Player spawns under the
 Surrounded by forest and a clear path to a small nearby village. Blue sky with clouds and the occasional wind effects.
 Non player characters that are only there for show, no dismembering
 A lightsaber imbued with the berculian effect.
-Star wars force powers as alternative grabbing methods
+Star wars force powers as alternative grabbing methods:
+Four types:
+remote controllable with linear/constant flying
+remote controllable non linear, exponential increase in speed
+player using force to extend and automatic retract (gum gum, boomerang style)
+fixed distance button press
+Although it is possible, the reason we don't see it because it just adds to motion sickness
 
 The report should be ...
+
+Working on report 1 page as of 05/08
