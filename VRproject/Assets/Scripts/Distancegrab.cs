@@ -7,19 +7,6 @@ public class Distancegrab : MonoBehaviour
     SteamVR_TrackedObject trackedObject;
     SteamVR_Controller.Device device;
 
-    //Making it a rigidbody
-
-    //public Rigidbody hand;
-
-    //This may be redundant
-    /*
-    void Start()
-    {
-        rb = GetComponent<RigidBody>();
-    }
-    */
-
-    // Awake is called when program is called
     void Awake()
     {
         trackedObject = GetComponent<SteamVR_TrackedObject>();
@@ -41,7 +28,6 @@ public class Distancegrab : MonoBehaviour
         if (device.GetTouchDown(EVRButtonId.k_EButton_SteamVR_Touchpad))
         {
             Debug.Log("Touchdown on touch pad");
-            addForce();
         }
         */
     }
@@ -81,13 +67,4 @@ public class Distancegrab : MonoBehaviour
         }
     }
 
-    // Add a force to the hand
-    /*
-    void addForce()
-    {
-        hand.isKinematic = false;
-
-        hand.AddForce(Camera.main.transform.TransformDirection(Vector3.forward) * throwForce);
-    }
-    */
 }
