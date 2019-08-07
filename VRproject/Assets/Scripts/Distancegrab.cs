@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 [RequireComponent(typeof(SteamVR_TrackedObject))]
+
 public class Distancegrab : MonoBehaviour
 {
     SteamVR_TrackedObject trackedObject;

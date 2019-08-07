@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(SteamVR_TrackedObject))]
+
 public class boomeragn : MonoBehaviour
 {
     SteamVR_TrackedObject trackedObject;
@@ -19,7 +21,7 @@ public class boomeragn : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         device = SteamVR_Controller.Input((int)trackedObject.index);
         if (device.GetTouch(SteamVR_Controller.ButtonMask.Trigger))
@@ -44,4 +46,5 @@ public class boomeragn : MonoBehaviour
         isReturning = true;
         rb.position += target.position - rb.position;
     }
+    //input 2.0
 }
