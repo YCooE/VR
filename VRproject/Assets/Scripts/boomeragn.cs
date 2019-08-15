@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-[RequireComponent(typeof(SteamVR_TrackedObject))]
+// Made obsolete by steamVR 2.0
+//[RequireComponent(typeof(SteamVR_TrackedObject))]
 
 public class boomeragn : MonoBehaviour
 {
+    /*
     SteamVR_TrackedObject trackedObject;
     SteamVR_Controller.Device device;
 
@@ -47,4 +48,5 @@ public class boomeragn : MonoBehaviour
         rb.position += target.position - rb.position;
     }
     //input 2.0
+    */
 }

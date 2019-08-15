@@ -6,7 +6,7 @@ using UnityEngine;
 // Cant grab, vector doesnt work, can only slightly nudge sometimes
 // f
 
-[RequireComponent(typeof(SteamVR_TrackedObject))]
+//[RequireComponent(typeof(SteamVR_TrackedObject))]
 public class Potatograb : MonoBehaviour {
     /*
     //public Rigidbody handtosend;

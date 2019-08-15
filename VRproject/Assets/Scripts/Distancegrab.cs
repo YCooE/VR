@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(SteamVR_TrackedObject))]
+// script made obsolete with steam vr 2.0
+//[RequireComponent(typeof(SteamVR_TrackedObject))]
 
 public class Distancegrab : MonoBehaviour
 {
+    /*
     SteamVR_TrackedObject trackedObject;
     SteamVR_Controller.Device device;
 
@@ -26,12 +28,12 @@ public class Distancegrab : MonoBehaviour
         {
             Debug.Log("Touchdown the trigger");
         }
-        /*
+        
         if (device.GetTouchDown(EVRButtonId.k_EButton_SteamVR_Touchpad))
         {
             Debug.Log("Touchdown on touch pad");
         }
-        */
+        
     }
 
     void OnTriggerStay(Collider col)
@@ -68,5 +70,6 @@ public class Distancegrab : MonoBehaviour
             rigid.angularVelocity = device.angularVelocity;
         }
     }
+    */
 
 }

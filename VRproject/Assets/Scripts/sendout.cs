@@ -1,14 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
+using Valve.VR;
 
 public class sendout : MonoBehaviour
 {
-
+    /*
     public Hand hand;
+
     public GameObject rigidHand;
+
     public SteamVR_Action_Boolean Sendout;
+
     public Transform target;
+
     private bool isReturning = false;
 
     // OnEnable is called after Awake, initializes
@@ -42,15 +48,15 @@ public class sendout : MonoBehaviour
 
     public void Send()
     {
-        StartCoroutine(DoPlan());
+        StartCoroutine(DoSend());
     }
 
-    private IEnumerator DoPlant()
+    private IEnumerator DoSend()
     {
         float throwForce = 50.0;
         Vector3 handPos;
 
-        RigidBody rigidbody = sendout.GetComponent<Rigidbody>();
+        Rigidbody rigidbody = sendout.GetComponent<Rigidbody>();
 
         if(rigidbody != null)
         {
@@ -79,6 +85,7 @@ public class sendout : MonoBehaviour
     void Return()
     {
         isReturning = true;
-        rb.position += target.position - rb.position;
+        rigidbody.position += target.position - rb.position;
     }
+    */
 }
