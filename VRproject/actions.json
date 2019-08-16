@@ -80,6 +80,10 @@
     {
       "name": "/actions/PFlyingHand/in/SphereAppearDisappear",
       "type": "boolean"
+    },
+    {
+      "name": "/actions/PFlyingHand/in/Sendout",
+      "type": "boolean"
     }
   ],
   "action_sets": [

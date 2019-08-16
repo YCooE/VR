@@ -24,5 +24,13 @@ namespace Valve.VR
                 return SteamVR_Actions.pFlyingHand_SphereAppearDisappear;
             }
         }
+        
+        public virtual SteamVR_Action_Boolean Sendout
+        {
+            get
+            {
+                return SteamVR_Actions.pFlyingHand_Sendout;
+            }
+        }
     }
 }
