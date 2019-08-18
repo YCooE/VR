@@ -27,13 +27,11 @@ public class Sendout : MonoBehaviour
     {
         Debug.Log("Touching is up");
         Nice = false;
-        Position.GetComponent<MeshRenderer>().enabled = false;
     }
     public void Touch2(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
         Debug.Log("Nah");
         Nice = true;
-        Position.GetComponent<MeshRenderer>().enabled = true;
     }
 
     // Update is called once per frame

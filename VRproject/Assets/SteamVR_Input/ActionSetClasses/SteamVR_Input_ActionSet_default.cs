@@ -89,11 +89,19 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean Sendout
+        public virtual SteamVR_Action_Boolean stretchArm
         {
             get
             {
-                return SteamVR_Actions.default_Sendout;
+                return SteamVR_Actions.default_stretchArm;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean strechArmBack
+        {
+            get
+            {
+                return SteamVR_Actions.default_strechArmBack;
             }
         }
         

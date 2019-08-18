@@ -41,7 +41,11 @@
       "requirement": "optional"
     },
     {
-      "name": "/actions/default/in/Sendout",
+      "name": "/actions/default/in/stretchArm",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/strechArmBack",
       "type": "boolean"
     },
     {

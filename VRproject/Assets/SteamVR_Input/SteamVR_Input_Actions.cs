@@ -35,7 +35,9 @@ namespace Valve.VR
         
         private static SteamVR_Action_Boolean p_default_HeadsetOnHead;
         
-        private static SteamVR_Action_Boolean p_default_Sendout;
+        private static SteamVR_Action_Boolean p_default_stretchArm;
+        
+        private static SteamVR_Action_Boolean p_default_strechArmBack;
         
         private static SteamVR_Action_Vibration p_default_Haptic;
         
@@ -129,11 +131,19 @@ namespace Valve.VR
             }
         }
         
-        public static SteamVR_Action_Boolean default_Sendout
+        public static SteamVR_Action_Boolean default_stretchArm
         {
             get
             {
-                return SteamVR_Actions.p_default_Sendout.GetCopy<SteamVR_Action_Boolean>();
+                return SteamVR_Actions.p_default_stretchArm.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean default_strechArmBack
+        {
+            get
+            {
+                return SteamVR_Actions.p_default_strechArmBack.GetCopy<SteamVR_Action_Boolean>();
             }
         }
         
@@ -229,7 +239,8 @@ namespace Valve.VR
                     SteamVR_Actions.default_SkeletonRightHand,
                     SteamVR_Actions.default_Squeeze,
                     SteamVR_Actions.default_HeadsetOnHead,
-                    SteamVR_Actions.default_Sendout,
+                    SteamVR_Actions.default_stretchArm,
+                    SteamVR_Actions.default_strechArmBack,
                     SteamVR_Actions.default_Haptic,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
@@ -250,7 +261,8 @@ namespace Valve.VR
                     SteamVR_Actions.default_SkeletonRightHand,
                     SteamVR_Actions.default_Squeeze,
                     SteamVR_Actions.default_HeadsetOnHead,
-                    SteamVR_Actions.default_Sendout,
+                    SteamVR_Actions.default_stretchArm,
+                    SteamVR_Actions.default_strechArmBack,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Steering,
@@ -273,7 +285,8 @@ namespace Valve.VR
                     SteamVR_Actions.default_GrabPinch,
                     SteamVR_Actions.default_GrabGrip,
                     SteamVR_Actions.default_HeadsetOnHead,
-                    SteamVR_Actions.default_Sendout,
+                    SteamVR_Actions.default_stretchArm,
+                    SteamVR_Actions.default_strechArmBack,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Brake,
                     SteamVR_Actions.buggy_Reset,
@@ -296,7 +309,8 @@ namespace Valve.VR
                     SteamVR_Actions.default_GrabGrip,
                     SteamVR_Actions.default_Squeeze,
                     SteamVR_Actions.default_HeadsetOnHead,
-                    SteamVR_Actions.default_Sendout,
+                    SteamVR_Actions.default_stretchArm,
+                    SteamVR_Actions.default_strechArmBack,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Steering,
@@ -318,7 +332,8 @@ namespace Valve.VR
             SteamVR_Actions.p_default_SkeletonRightHand = ((SteamVR_Action_Skeleton)(SteamVR_Action.Create<SteamVR_Action_Skeleton>("/actions/default/in/SkeletonRightHand")));
             SteamVR_Actions.p_default_Squeeze = ((SteamVR_Action_Single)(SteamVR_Action.Create<SteamVR_Action_Single>("/actions/default/in/Squeeze")));
             SteamVR_Actions.p_default_HeadsetOnHead = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/HeadsetOnHead")));
-            SteamVR_Actions.p_default_Sendout = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/Sendout")));
+            SteamVR_Actions.p_default_stretchArm = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/stretchArm")));
+            SteamVR_Actions.p_default_strechArmBack = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/strechArmBack")));
             SteamVR_Actions.p_default_Haptic = ((SteamVR_Action_Vibration)(SteamVR_Action.Create<SteamVR_Action_Vibration>("/actions/default/out/Haptic")));
             SteamVR_Actions.p_platformer_Move = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/platformer/in/Move")));
             SteamVR_Actions.p_platformer_Jump = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/platformer/in/Jump")));
