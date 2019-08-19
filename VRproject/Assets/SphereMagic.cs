@@ -7,7 +7,7 @@ using Valve.VR;
 public class SphereMagic : MonoBehaviour
 {
     // a reference to the action
-    public SteamVR_Action_Boolean SphereOnOff;
+    public SteamVR_Action_Boolean SphereOnOff = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("SphereMagic");
 
     // a reference to the hand
     public SteamVR_Input_Sources handType;

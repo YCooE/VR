@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.12daysleft.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\Peter Lim\\Documents\\GitHub\\VR\\VRproject\\actions.json",
+      "action_manifest_path": "C:\\Users\\12345678\\Documents\\GitHub\\VR\\VRproject\\actions.json",
       "strings": {
         "en_us": {
           "name": "12Daysleft [Testing]"

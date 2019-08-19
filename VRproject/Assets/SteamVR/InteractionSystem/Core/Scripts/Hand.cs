@@ -54,9 +54,9 @@ namespace Valve.VR.InteractionSystem
 
         public SteamVR_Action_Boolean uiInteractAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("InteractUI");
 
-        public SteamVR_Action_Boolean strechArm = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("Sendout");
+        public SteamVR_Action_Boolean strechArm;
 
-        public SteamVR_Action_Boolean strechArmBack = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("Sendback");
+        public SteamVR_Action_Boolean strechArmBack;
 
         public bool useHoverSphere = true;
         public Transform hoverSphereTransform;
@@ -90,6 +90,8 @@ namespace Valve.VR.InteractionSystem
         public bool showDebugInteractables = false;
 
         private static float strecha = 0.0f;
+
+        public bool isZero = false;
 
         public struct AttachedObject
         {
@@ -767,6 +769,9 @@ namespace Valve.VR.InteractionSystem
         protected virtual void Awake()
         {
 
+            strechArm.AddOnStateDownListener(new_out, handType);
+            strechArmBack.AddOnStateDownListener(new_in, handType);
+
             inputFocusAction = SteamVR_Events.InputFocusAction(OnInputFocus);
 
             if (hoverSphereTransform == null)
@@ -804,8 +809,6 @@ namespace Valve.VR.InteractionSystem
         //-------------------------------------------------
         protected virtual IEnumerator Start()
         {
-            strechArm.AddOnStateDownListener(new_out, handType);
-            strechArm.AddOnStateUpListener(new_in, handType);
 
             // save off player instance
             playerInstance = Player.instance;
@@ -1166,13 +1169,17 @@ namespace Valve.VR.InteractionSystem
                 }
             }
         }
-        protected virtual void new_out(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSources)
+
+        // New arm controls
+        public void new_out(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSources)
         {
             StartCoroutine("Arm_out");
             Debug.Log("Touch");
+            isZero = false;
         }
 
-        protected virtual void new_in(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSources)
+
+        public void new_in(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSources)
         {
             StartCoroutine("Arm_in");
             Debug.Log("Touch again");

@@ -1054,6 +1054,18 @@ PrefabInstance:
       propertyPath: strechArm.actionPath
       value: /actions/default/in/stretchArm
       objectReference: {fileID: 0}
+    - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: strechArmBack.actionPath
+      value: /actions/default/in/strechArmBack
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: strechArm.actionPath
+      value: /actions/default/in/stretchArm
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: strechArmBack.actionPath
+      value: /actions/default/in/strechArmBack
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
 --- !u!1 &1236963595 stripped
@@ -1071,15 +1083,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1236963595}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01f9f1db7aad46409d9e05292147c63, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c908fda58824f54988dff55b631b127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sendout:
-    actionPath: /actions/PFlyingHand/in/Sendout
+  SphereOnOff:
+    actionPath: /actions/PFlyingHand/in/SphereAppearDisappear
     needsReinit: 0
   handType: 1
-  Position: {fileID: 1236963595}
-  Nice: 0
+  Sphere: {fileID: 1908082262}
 --- !u!43 &1320978784
 Mesh:
   m_ObjectHideFlags: 0
