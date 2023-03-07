@@ -1,5 +1,6 @@
-# VR Hands
+# Virtual Reality Hands
 I make some VR hands <br />
+Based on the following paper
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.38.6690&rep=rep1&type=pdf <br/>
 https://codingchronicles.com/100-days-of-unity-vr-development <br/>
 https://stackoverflow.com/questions/52686286/how-to-update-your-unity-project-input-to-steamvr-2-0 <br/>
