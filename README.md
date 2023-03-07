@@ -3,7 +3,7 @@ I make some VR hands <br />
 Based on the following paper <br />
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.38.6690&rep=rep1&type=pdf <br/>
 
-Todo list>
+Todo list:
 
 1. Grabbing works but not well, add smoothness to it
 2. Should move along an vector when touchpad up is held down and then immediatly stop or with a little bit of drag
@@ -19,7 +19,7 @@ Ideas, if I continue:
 - A lightsaber imbued with the berculian effect
 - Star wars force powers as alternative grabbing methods:
 
-Four option types in the future:
+Three option types in the future:
 - Remote controllable with linear/constant flying
 - Remote controllable non linear, exponential increase in speed
 - Player using force to extend and automatic retract (gum gum, boomerang style)
